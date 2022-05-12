@@ -5,5 +5,5 @@ mergeable:
     name: 'Check tribe/squad labels'
     validate:
       - do: label
-        jira:
+        http_api:
           endpoint: https://hellodev.hellofresh.io/api/catalog/entities/by-name/Group/adtech/leads
