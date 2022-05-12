@@ -6,5 +6,7 @@ mergeable:
     validate:
       - do: label
         json_http_api:
-          regex: 'tribe: (?<tribe>.*)|squad: (?<squad>.*)'
+          regex: 
+            - tribe: (?<tribe>.*)
+            - squad: (?<squad>.*)
           endpoint: https://hellodev.hellofresh.io/api/catalog/entities/by-name/Group/{{tribe}}/{{squad}}
