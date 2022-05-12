@@ -6,5 +6,5 @@ mergeable:
     validate:
       - do: label
         json_http_api:
-          regex: 'tribe: ([a-z]+[a-z\-]+)'
-          endpoint: https://hellodev.hellofresh.io/api/catalog/entities/by-name/Group/hellotech/$1
+          regex: '(tribe: )([a-z]+[a-z\-]+)'
+          endpoint: https://hellodev.hellofresh.io/api/catalog/entities/by-name/Group/hellotech/$2
