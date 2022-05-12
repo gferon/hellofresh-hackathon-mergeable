@@ -7,3 +7,4 @@ mergeable:
       - do: label
         http_api:
           endpoint: https://hellodev.hellofresh.io/api/catalog/entities/by-name/Group/adtech/leads
+          regex: 'squad: [a-z]+[a-z\-]+'
